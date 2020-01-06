@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/providers/index.js"],"names":["gist"],"mappings":";;;;;;;AAAA;;;;;;eAEe,CAACA,IAAD,C","sourcesContent":["import * as gist from './gist'\n\nexport default [gist]\n"],"file":"index.js"}
