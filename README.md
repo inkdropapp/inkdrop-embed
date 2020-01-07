@@ -2,6 +2,8 @@
 
 Allows Inkdrop to embed external contents to a note.
 
+Note that printing and exporting are not supported since external contents are loaded asynchronously.
+
 ![](https://github.com/inkdropapp/inkdrop-embed/raw/master/docs/screenshot.png)
 
 ## How to use
