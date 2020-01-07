@@ -49,8 +49,6 @@ You can change them from Preferences window:
 - You can't search embedded contents with keywords
 - Printing and exporting not supported as they are loaded asynchronously
 
-##
-
 ## Changelog
 
 - 0.1.0

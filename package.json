@@ -6,7 +6,7 @@
   "keywords": [
     "inkdrop"
   ],
-  "repository": "https://github.com/inkdropapp/embed",
+  "repository": "https://github.com/inkdropapp/inkdrop-embed",
   "license": "MIT",
   "engines": {
     "inkdrop": "^4.x"
