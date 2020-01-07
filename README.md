@@ -17,7 +17,13 @@ ipm install embed
 Write a link with "embed" caption like so:
 
 ```markdown
-[embed](https://gist.github.com/craftzdog/e33165a344f71890ad10f2265d083e44)
+[embed](https://twitter.com/inkdrop_app/status/1209029200989941760)
+```
+
+Or just write a URL:
+
+```markdown
+https://twitter.com/inkdrop_app/status/1209029200989941760
 ```
 
 Links with a caption not starting with 'embed' will be rendered as regular link.
@@ -27,6 +33,23 @@ Links with a caption not starting with 'embed' will be rendered as regular link.
 - [Gist](https://gist.github.com/)
 - [Twitter](https://twitter.com/)
 - [YouTube](https://www.youtube.com/)
+
+PR will be welcomed for supporting other platforms.
+See [the existing implementations here](https://github.com/inkdropapp/inkdrop-embed/tree/master/src/providers).
+See also [inkdrop embed provider](https://github.com/inkdropapp/inkdrop-embed-provider) if you need a static webpage for loading external scripts inside an iframe.
+
+## Settings
+
+You can change them from Preferences window:
+
+- **autolinks**: Create embeds from standard URLs
+
+## Limitations
+
+- You can't search embedded contents with keywords
+- Printing and exporting not supported as they are loaded asynchronously
+
+##
 
 ## Changelog
 
