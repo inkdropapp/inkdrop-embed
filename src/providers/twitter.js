@@ -1,6 +1,7 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import { useRef, useState } from 'react'
+import { isLocal } from '../utils'
 const BASE_URL = 'https://twitter.com/'
 const EMBED_PROVIDER_URL =
   'https://inkdrop-embed-provider.netlify.com/twitter.html'
@@ -15,7 +16,7 @@ export default function Tweet(props) {
   const [frameId] = useState('twitter-' + Math.random())
   const url = `${EMBED_PROVIDER_URL}?url=${encodeURIComponent(
     href
-  )}&id=${frameId}`
+  )}&id=${frameId}&origin=${isLocal ? 0 : 1}`
 
   return (
     <iframe
