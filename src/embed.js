@@ -3,6 +3,13 @@ import { markdownRenderer } from 'inkdrop'
 
 module.exports = {
   origAComponent: null,
+  config: {
+    autolinks: {
+      title: 'Create embeds from standard URLs',
+      type: 'boolean',
+      default: true
+    }
+  },
 
   activate() {
     if (markdownRenderer) {

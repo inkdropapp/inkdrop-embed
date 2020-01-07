@@ -12,7 +12,11 @@ export default function createRemarkAnchor(OrigA) {
     render() {
       const { href, children } = this.props
       const [label] = children instanceof Array ? children : []
-      if (typeof label === 'string' && label.startsWith('embed')) {
+      const isAutolinkEnabled = inkdrop.config.get('embed.autolinks')
+      if (
+        (typeof label === 'string' && label.startsWith('embed')) ||
+        (isAutolinkEnabled && label === href)
+      ) {
         for (const provider of providers) {
           if (provider.test(href)) {
             const Component = provider.default
