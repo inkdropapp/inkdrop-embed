@@ -26,6 +26,7 @@ Links with a caption not starting with 'embed' will be rendered as regular link.
 
 - [Gist](https://gist.github.com/)
 - [Twitter](https://twitter.com/)
+- [YouTube](https://www.youtube.com/)
 
 ## Changelog
 

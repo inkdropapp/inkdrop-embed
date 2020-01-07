@@ -12,7 +12,7 @@ export function test(url) {
 export default function Tweet(props) {
   const { href } = props
   const contentFrame = useRef()
-  const [frameId] = useState('gist-' + Math.random())
+  const [frameId] = useState('twitter-' + Math.random())
   const url = `${EMBED_PROVIDER_URL}?url=${encodeURIComponent(
     href
   )}&id=${frameId}`
