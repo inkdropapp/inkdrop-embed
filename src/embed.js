@@ -48,8 +48,8 @@ module.exports = {
           break
         case 'embed:open-external':
           const electron = require('electron')
+          const { uri } = data
           if (electron && electron.shell) {
-            const { uri } = data
             electron.shell.openExternal(uri)
             break
           } else if (window.inkdrop.sendMessageToNative) {
