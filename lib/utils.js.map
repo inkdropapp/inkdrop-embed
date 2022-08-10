@@ -1,1 +1,0 @@
-{"version":3,"sources":["../src/utils.js"],"names":["isLocal","location","protocol"],"mappings":";;;;;;AAAO,MAAMA,OAAO,GAAGC,QAAQ,CAACC,QAAT,KAAsB,OAAtC","sourcesContent":["export const isLocal = location.protocol === 'file:'\n"],"file":"utils.js"}

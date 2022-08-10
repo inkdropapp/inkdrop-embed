@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/providers/index.js"],"names":["gist","twitter","youtube"],"mappings":";;;;;;;AAAA;;AACA;;AACA;;;;;;eAEe,CAACA,IAAD,EAAOC,OAAP,EAAgBC,OAAhB,C","sourcesContent":["import * as gist from './gist'\nimport * as twitter from './twitter'\nimport * as youtube from './youtube'\n\nexport default [gist, twitter, youtube]\n"],"file":"index.js"}
