@@ -4,7 +4,7 @@ import { useRef, useState } from 'react'
 import { isLocal } from '../utils'
 const BASE_URL = 'https://twitter.com/'
 const EMBED_PROVIDER_URL =
-  'https://inkdrop-embed-provider.netlify.com/twitter.html'
+  'https://inkdrop-embed-provider.vercel.app/twitter.html'
 
 export function test(url) {
   return url.startsWith(BASE_URL)

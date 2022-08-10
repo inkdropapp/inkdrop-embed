@@ -4,7 +4,7 @@ import { useRef, useState } from 'react'
 import { isLocal } from '../utils'
 const BASE_URL = 'https://gist.github.com/'
 const EMBED_PROVIDER_URL =
-  'https://inkdrop-embed-provider.netlify.com/gist.html'
+  'https://inkdrop-embed-provider.vercel.app/gist.html'
 
 export function test(url) {
   return url.startsWith(BASE_URL)
