@@ -1,10 +1,8 @@
 import * as React from 'react'
-import PropTypes from 'prop-types'
 import { useRef, useState } from 'react'
 import { isLocal } from '../utils'
 const BASE_URL = 'https://gist.github.com/'
-const EMBED_PROVIDER_URL =
-  'https://inkdrop-embed-provider.vercel.app/gist.html'
+const EMBED_PROVIDER_URL = 'https://inkdrop-embed-provider.vercel.app/gist.html'
 
 export function test(url) {
   return url.startsWith(BASE_URL)
@@ -26,8 +24,4 @@ export default function Gist(props) {
       src={url}
     ></iframe>
   )
-}
-
-Gist.prototype.propTypes = {
-  href: PropTypes.string
 }

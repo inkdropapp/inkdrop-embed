@@ -1,5 +1,4 @@
 import * as React from 'react'
-import PropTypes from 'prop-types'
 import { useRef, useState } from 'react'
 import { isLocal } from '../utils'
 const BASE_URL = 'https://twitter.com/'
@@ -26,8 +25,4 @@ export default function Tweet(props) {
       src={url}
     ></iframe>
   )
-}
-
-Tweet.prototype.propTypes = {
-  href: PropTypes.string
 }

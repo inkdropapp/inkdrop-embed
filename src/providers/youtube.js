@@ -1,5 +1,4 @@
 import * as React from 'react'
-import PropTypes from 'prop-types'
 import { useRef, useState } from 'react'
 const BASE_URL = 'https://www.youtube.com/'
 const EMBED_PROVIDER_URL = 'https://www.youtube.com/embed/'
@@ -28,8 +27,4 @@ export default function YouTube(props) {
       allowFullScreen
     ></iframe>
   )
-}
-
-YouTube.prototype.propTypes = {
-  href: PropTypes.string
 }
