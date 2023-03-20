@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { useRef, useState } from 'react'
-const BASE_URL = 'https://www.vimeo.com/'
+const BASE_URL_REGEX = /https:\/\/(www\.|)vimeo.com\//
 const EMBED_PROVIDER_URL = 'https://player.vimeo.com/video/'
 
 export function test(url) {
-  return url.startsWith(BASE_URL)
+  return url.match(BASE_URL_REGEX)
 }
 
 export default function Vimeo(props) {
