@@ -13,7 +13,7 @@ export default function Vimeo(props) {
   const [frameId] = useState('vimeo-' + Math.random())
   const splitUrl = href.split('/')
   const videoId = splitUrl[splitUrl.length - 1]
-  const url = `${EMBED_PROVIDER_URL}${videoId}`
+  const url = `${EMBED_PROVIDER_URL}${videoId}?transparent=0`
 
   return (
     <iframe
