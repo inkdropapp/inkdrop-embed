@@ -33,6 +33,7 @@ Links with a caption not starting with 'embed' will be rendered as regular link.
 - [Gist](https://gist.github.com/)
 - [Twitter](https://twitter.com/)
 - [YouTube](https://www.youtube.com/)
+- [Vimeo](https://vimeo.com/)
 
 PR will be welcomed for supporting other platforms.
 See [the existing implementations here](https://github.com/inkdropapp/inkdrop-embed/tree/master/src/providers).
@@ -51,5 +52,4 @@ You can change them from Preferences window:
 
 ## Changelog
 
-- 0.1.0
-  - Initial release
+Check out [the releases page](https://github.com/inkdropapp/inkdrop-embed/releases).
