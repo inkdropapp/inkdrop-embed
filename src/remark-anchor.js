@@ -4,8 +4,7 @@ import providers from './providers'
 export default function createRemarkAnchor(OrigA) {
   return class RemarkAnchor extends React.Component {
     render() {
-      const { href, children } = this.props
-      const [label] = children instanceof Array ? children : []
+      const { href, children: label } = this.props
       const isAutolinkEnabled = inkdrop.config.get('embed.autolinks')
       if (typeof label === 'string' && typeof href === 'string') {
         if (
@@ -21,9 +20,9 @@ export default function createRemarkAnchor(OrigA) {
         }
       }
       if (OrigA) {
-        return <OrigA {...this.props}>{children}</OrigA>
+        return <OrigA {...this.props}>{label}</OrigA>
       } else {
-        return <a {...this.props}>{children}</a>
+        return <a {...this.props}>{label}</a>
       }
     }
   }
