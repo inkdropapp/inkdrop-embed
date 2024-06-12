@@ -22,6 +22,8 @@ export default function Gist(props) {
       className="embed-frame"
       ref={contentFrame}
       src={url}
+      // eslint-disable-next-line
+      allowTransparency="true"
     ></iframe>
   )
 }

@@ -23,6 +23,8 @@ export default function Tweet(props) {
       className="embed-frame"
       ref={contentFrame}
       src={url}
+      // eslint-disable-next-line
+      allowTransparency="true"
     ></iframe>
   )
 }
