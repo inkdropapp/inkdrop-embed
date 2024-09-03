@@ -7,17 +7,15 @@ Allows Inkdrop to embed external content into a note.
 
 ![](https://github.com/inkdropapp/inkdrop-embed/raw/master/docs/screenshot.png)
 
-## How to use
-
-Install:
+## Install
 
 ```sh
 ipm install embed
 ```
 
-### Enable embeds in a link
+## Enable embeds in a link
 
-#### Title attribute (Recommended)
+### Title attribute (Recommended)
 
 Add the "!embed" link title attribute, which allows you to have a regular link caption:
 
@@ -27,7 +25,7 @@ Add the "!embed" link title attribute, which allows you to have a regular link c
 
 This way, you can still have a regular link caption on other Markdown renderers.
 
-#### Link caption
+### Link caption
 
 Write a link with the "embed" caption like so:
 
@@ -35,7 +33,7 @@ Write a link with the "embed" caption like so:
 [embed](https://twitter.com/inkdrop_app/status/1209029200989941760)
 ```
 
-#### Plain URL
+### Plain URL
 
 ```markdown
 https://twitter.com/inkdrop_app/status/1209029200989941760
