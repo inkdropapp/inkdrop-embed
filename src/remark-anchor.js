@@ -1,14 +1,15 @@
-import * as React from 'react'
+import React from 'react'
 import providers from './providers'
 
 export default function createRemarkAnchor(OrigA) {
   return class RemarkAnchor extends React.Component {
     render() {
-      const { href, children: label } = this.props
+      const { href, children: label, title } = this.props
       const isAutolinkEnabled = inkdrop.config.get('embed.autolinks')
       if (typeof label === 'string' && typeof href === 'string') {
         if (
-          label.startsWith('embed') ||
+          label === 'embed' ||
+          title === 'embed' ||
           (isAutolinkEnabled && label === href)
         ) {
           for (const provider of providers) {

@@ -1,8 +1,9 @@
 # Embed plugin for Inkdrop
 
-Allows Inkdrop to embed external contents to a note.
+Allows Inkdrop to embed external content into a note.
 
-Note that printing and exporting are not supported since external contents are loaded asynchronously.
+> [!Note]
+> Printing and exporting are not supported since external content is loaded asynchronously.
 
 ![](https://github.com/inkdropapp/inkdrop-embed/raw/master/docs/screenshot.png)
 
@@ -14,19 +15,37 @@ Install:
 ipm install embed
 ```
 
-Write a link with "embed" caption like so:
+### Enable embeds in a link
+
+#### Title attribute (Recommended)
+
+Or, add the "embed" link title attribute, which allows you to have a regular link caption:
+
+```markdown
+[Regular link caption in other Markdown renderers](https://twitter.com/inkdrop_app/status/1209029200989941760 "embed")
+```
+
+#### Link caption
+
+Write a link with the "embed" caption like so:
 
 ```markdown
 [embed](https://twitter.com/inkdrop_app/status/1209029200989941760)
 ```
 
-Or just write a URL:
+#### Plain URL
 
 ```markdown
 https://twitter.com/inkdrop_app/status/1209029200989941760
 ```
 
-Links with a caption not starting with 'embed' will be rendered as regular link.
+Or, with angle brackets:
+
+```markdown
+<https://twitter.com/inkdrop_app/status/1209029200989941760>
+```
+
+You can disable this behavior by setting the `autolinks` option to `false` in the plugin settings (See [Settings](#settings)).
 
 ## Supported contents
 
@@ -35,19 +54,19 @@ Links with a caption not starting with 'embed' will be rendered as regular link.
 - [YouTube](https://www.youtube.com/)
 - [Vimeo](https://vimeo.com/)
 
-PR will be welcomed for supporting other platforms.
+PRs are welcome for supporting other platforms.
 See [the existing implementations here](https://github.com/inkdropapp/inkdrop-embed/tree/master/src/providers).
 See also [inkdrop embed provider](https://github.com/inkdropapp/inkdrop-embed-provider) if you need a static webpage for loading external scripts inside an iframe.
 
 ## Settings
 
-You can change them from Preferences window:
+You can change them from the Preferences window:
 
 - **autolinks**: Create embeds from standard URLs
 
 ## Limitations
 
-- You can't search embedded contents with keywords
+- You can't search embedded content with keywords
 - Printing and exporting not supported as they are loaded asynchronously
 
 ## Changelog
