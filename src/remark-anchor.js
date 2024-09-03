@@ -9,7 +9,7 @@ export default function createRemarkAnchor(OrigA) {
       if (typeof label === 'string' && typeof href === 'string') {
         if (
           label === 'embed' ||
-          title === 'embed' ||
+          title === '!embed' ||
           (isAutolinkEnabled && label === href)
         ) {
           for (const provider of providers) {

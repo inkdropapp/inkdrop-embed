@@ -19,11 +19,13 @@ ipm install embed
 
 #### Title attribute (Recommended)
 
-Or, add the "embed" link title attribute, which allows you to have a regular link caption:
+Add the "!embed" link title attribute, which allows you to have a regular link caption:
 
 ```markdown
-[Regular link caption in other Markdown renderers](https://twitter.com/inkdrop_app/status/1209029200989941760 "embed")
+[Regular link caption](https://x.com/inkdrop_app/status/1724381913576554862 "!embed")
 ```
+
+This way, you can still have a regular link caption on other Markdown renderers.
 
 #### Link caption
 
