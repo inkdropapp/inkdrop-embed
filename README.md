@@ -2,7 +2,7 @@
 
 Allows Inkdrop to embed external content into a note.
 
-> [!Note]
+> [!NOTE]
 > Printing and exporting are not supported since external content is loaded asynchronously.
 
 ![](https://github.com/inkdropapp/inkdrop-embed/raw/master/docs/screenshot.png)
