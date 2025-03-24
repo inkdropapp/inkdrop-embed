@@ -1,12 +1,14 @@
 import * as React from 'react'
 import { useRef, useState } from 'react'
 import { isLocal } from '../utils'
-const BASE_URL = 'https://twitter.com/'
+const BASE_X_URL = 'https://x.com/'
+const BASE_TWITTER_URL = 'https://twitter.com/'
 const EMBED_PROVIDER_URL =
   'https://inkdrop-embed-provider.vercel.app/twitter.html'
 
 export function test(url) {
-  return url.startsWith(BASE_URL)
+  console.log('test url:', url)
+  return url.startsWith(BASE_X_URL) || url.startsWith(BASE_TWITTER_URL)
 }
 
 export default function Tweet(props) {

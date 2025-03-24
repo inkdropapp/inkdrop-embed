@@ -41,12 +41,13 @@ module.exports = {
     const { data } = event
     if (data instanceof Object) {
       switch (data.message) {
-        case 'embed:adjust-iframe-size':
+        case 'embed:adjust-iframe-size': {
           const { id, height } = data
           var i = document.getElementById(id)
           i.style.height = parseInt(height) + 'px'
           break
-        case 'embed:open-external':
+        }
+        case 'embed:open-external': {
           const electron = require('electron')
           const { uri } = data
           if (electron && electron.shell) {
@@ -58,6 +59,7 @@ module.exports = {
               params: { uri }
             })
           }
+        }
       }
     }
   }
