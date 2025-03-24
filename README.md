@@ -50,7 +50,7 @@ You can disable this behavior by setting the `autolinks` option to `false` in th
 ## Supported contents
 
 - [Gist](https://gist.github.com/)
-- [Twitter](https://twitter.com/)
+- [Twitter (X)](https://x.com/)
 - [YouTube](https://www.youtube.com/)
 - [Vimeo](https://vimeo.com/)
 
