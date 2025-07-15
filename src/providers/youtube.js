@@ -13,7 +13,8 @@ export function extractVideoIdFromURL(url) {
     return query.get('v')
   } else if (url.startsWith('https://youtu.be/')) {
     const parts = url.split('/')
-    return parts[parts.length - 1]
+    const lastPart = parts[parts.length - 1]
+    return lastPart.split('?')[0]
   }
   return null
 }
