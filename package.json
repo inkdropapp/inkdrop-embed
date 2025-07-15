@@ -15,7 +15,8 @@
     "build": "babel src/ -d lib/",
     "dev": "babel src/ -s -d lib/ --watch",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "lint": "eslint src/"
   },
   "devDependencies": {
     "@babel/cli": "^7.28.0",
