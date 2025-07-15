@@ -7,7 +7,6 @@ const EMBED_PROVIDER_URL =
   'https://inkdrop-embed-provider.vercel.app/twitter.html'
 
 export function test(url) {
-  console.log('test url:', url)
   return url.startsWith(BASE_X_URL) || url.startsWith(BASE_TWITTER_URL)
 }
 

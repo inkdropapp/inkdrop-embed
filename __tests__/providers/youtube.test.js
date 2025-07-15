@@ -1,4 +1,4 @@
-import { extractVideoIdFromURL } from '../youtube'
+import { extractVideoIdFromURL } from '../../src/providers/youtube'
 
 describe('extractVideoIdFromURL', () => {
   test('extracts video ID from standard YouTube URL', () => {
