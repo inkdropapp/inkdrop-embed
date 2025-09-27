@@ -53,6 +53,8 @@ You can disable this behavior by setting the `autolinks` option to `false` in th
 - [Twitter (X)](https://x.com/)
 - [YouTube](https://www.youtube.com/)
 - [Vimeo](https://vimeo.com/)
+- [Chess.com](https://chess.com)
+- [Lichess](https://lichess.org)
 
 PRs are welcome for supporting other platforms.
 See [the existing implementations here](https://github.com/inkdropapp/inkdrop-embed/tree/master/src/providers).
