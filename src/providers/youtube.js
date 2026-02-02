@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { useRef, useState } from 'react'
 const BASE_URLS = ['https://www.youtube.com/', 'https://youtu.be/']
-const EMBED_PROVIDER_URL = 'https://www.youtube.com/embed/'
+const EMBED_PROVIDER_URL =
+  'https://inkdrop-embed-provider.vercel.app/youtube.html'
 
 export function test(url) {
   return BASE_URLS.some(baseUrl => url.startsWith(baseUrl))
@@ -26,7 +27,9 @@ export default function YouTube(props) {
   const videoId = extractVideoIdFromURL(href)
 
   if (videoId) {
-    const url = `${EMBED_PROVIDER_URL}${videoId}`
+    const url = `${EMBED_PROVIDER_URL}?v=${encodeURIComponent(
+      videoId
+    )}&id=${frameId}`
 
     return (
       <iframe
@@ -36,8 +39,10 @@ export default function YouTube(props) {
         height="344"
         src={url}
         frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
+        allowTransparency="true"
       ></iframe>
     )
   } else {
