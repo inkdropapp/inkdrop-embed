@@ -9,7 +9,7 @@
   "repository": "https://github.com/inkdropapp/inkdrop-embed",
   "license": "MIT",
   "engines": {
-    "inkdrop": "^5.x || ^6.x"
+    "inkdrop": "^5.x"
   },
   "scripts": {
     "build": "babel src/ -d lib/",

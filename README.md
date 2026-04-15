@@ -2,6 +2,9 @@
 
 Allows Inkdrop to embed external content into a note.
 
+> [!WARNING]
+> This plugin has been deprecated in v6. Each provider is now available as a separate plugin.
+
 > [!NOTE]
 > Printing and exporting are not supported since external content is loaded asynchronously.
 
